@@ -14,11 +14,11 @@ public class NumbersPalindrome {
         for (int i = 0; i < numbersFromList.size(); i++) {
             if (numbersFromList.get(i).equals(reversedNumbersFromList.get(i))) {
                 IS_NUMBER_SAME = true;
-                continue;
-            } else
+            } else {
                 IS_NUMBER_SAME = false;
-            System.out.println("Podane cyfry " + numbersFromList + " nie tworzą palindromu");
-            return;
+                System.out.println("Podane cyfry " + numbersFromList + " nie tworzą palindromu");
+                return;
+            }
         }
         if (IS_NUMBER_SAME) {
             System.out.println("Podane cyfry " + numbersFromList + " tworzą palindrom.");
